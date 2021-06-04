@@ -10,11 +10,11 @@ while True:
     valid = False
 
     while (valid==False):
-        playermove = input('Ваш ход (rock, paper, scissors): ')
+        playermove = input('Your move (rock, paper, scissors): ')
         if (playermove=='scissors') or (playermove=='rock') or (playermove=='paper'):
             valid=True
         else:
-            print('Неверный ход!')
+            print('Invalid move!')
     
     playermove = playermove.lower()
     botmove = random.choice(posmoves)
@@ -36,7 +36,7 @@ while True:
     if (playermove==botmove):
         winner='tie'
 
-    print(f'{playermove} vs {botmove}\n{winner} выиграл!')
+    print(f'{playermove} vs {botmove}\n{winner} wins!')
 
     if (winner=='player') and (posmoves.count(botmove) != 1):
         posmoves.remove(botmove)
