@@ -1,14 +1,14 @@
 # rock-paper-scissors-ai
-AI/machine learning app that can play rock-paper-scissors
-# How?
-Black magic, also python.
-# Why?
-For funnies.
-# Modules?
-Standart random & json.
-# Modes?
-Playing - no change to json file, training - training the bot.
+ИИ который умеет играть в камень ножницы бумага
+# Как?
+Магия, а также пайтон.
+# Зачем?
+Для прiколов.
+# Модули?
+Стандартные random и json
+# Режимы?
+Playing - без изменений к key.json, training - тренирует бота.
 # Key.json?
-This file contains possibilities for bot moves
-# What else?
-Nothing.
+В этом файле содержится вес для каждого хода (камень, ножницы, бумага).
+# Что ещё?
+Ничего.
