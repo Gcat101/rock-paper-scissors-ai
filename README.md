@@ -6,6 +6,8 @@ Black magic, also python.
 For funnies.
 # Modules?
 Standart random & json.
+# Modes?
+Playing - no change to json file, training - training the bot.
 # Key.json?
 This file contains possibilities for bot moves
 # What else?
