@@ -6,17 +6,29 @@ with open('key.json') as json_file:
     posmoves = json.load(json_file)
 posmoves.sort()
 
+modevalid = False
+
+while (modevalid == False):
+    mode = input('What mode would you like to play? (Training/playing): ')
+    mode = mode.lower()
+
+    if (mode == 'training') or (mode == 'playing'):
+        modevalid = True
+    else:
+        print('Invalid mode!')
+
 while True:
     valid = False
 
     while (valid==False):
         playermove = input('Your move (rock, paper, scissors): ')
+        playermove = playermove.lower()
+        
         if (playermove=='scissors') or (playermove=='rock') or (playermove=='paper'):
             valid=True
         else:
             print('Invalid move!')
     
-    playermove = playermove.lower()
     botmove = random.choice(posmoves)
 
     winner = ''
@@ -38,12 +50,13 @@ while True:
 
     print(f'{playermove} vs {botmove}\n{winner} wins!')
 
-    if (winner=='player') and (posmoves.count(botmove) != 1):
-        posmoves.remove(botmove)
-    if (winner=='bot'):
-        posmoves.append(botmove)
+    if (mode == 'training'):
+        if (winner=='player') and (posmoves.count(botmove) != 1):
+            posmoves.remove(botmove)
+        if (winner=='bot'):
+            posmoves.append(botmove)
 
-    posmoves.sort()
+        posmoves.sort()
 
-    with open('key.json', 'w') as outfile:
-            json.dump(posmoves, outfile)
+        with open('key.json', 'w') as outfile:
+                json.dump(posmoves, outfile)
