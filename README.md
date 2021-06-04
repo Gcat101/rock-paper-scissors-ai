@@ -12,3 +12,5 @@ Playing - no change to json file, training - training the bot.
 This file contains possibilities for bot moves. 
 # What else?
 Nothing.
+# Other languages?
+RU: Для русского перейдите на ветку Russian.
