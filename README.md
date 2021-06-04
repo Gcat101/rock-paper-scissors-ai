@@ -13,4 +13,4 @@ This file contains possibilities for bot moves.
 # What else?
 Nothing.
 # Other languages?
-RU: Для русского перейдите на ветку Russian.
+* RU: Для русского перейдите на ветку Russian.
